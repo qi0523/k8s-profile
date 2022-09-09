@@ -310,9 +310,9 @@ for i in range(0,params.nodeCount):
     node = RSpec.XenVM(nodename)
     # if params.nodeType:
     #     node.hardware_type = params.nodeType
+    node.cores = 1
+    node.ram   = 3072
     node.exclusive = True
-node.cores = 1
-node.ram   = 3072
     if params.diskImage:
         node.disk_image = params.diskImage
     j = 0
